@@ -1,0 +1,103 @@
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+header.logged {
+    position: absolute;
+    height: 25%;
+    width: 95%;
+    top: 2%;
+    border-radius: 40px;
+    background-color: rgba(196, 196, 196, .7);
+}
+
+header.logged h1 {
+    font-size: 120px;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-top: 50px;
+    filter: drop-shadow(0 8px 8px #363340);
+}
+
+header.logged nav {
+    position: absolute;
+    width: 40%;
+    right: 3%;
+    bottom: 10%;
+    font-size: 40px;
+}
+
+header.logged>nav>ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+header.logged li {
+    position: relative;
+}
+
+header.logged li>ul {
+    width: 300px;
+    visibility: hidden;
+    position: absolute;
+    z-index: 99;
+    list-style: none;
+    background-color: #fff;
+}
+
+header.logged li:hover>ul {
+    visibility: visible;
+}
+
+header.logged li:hover li {
+    border-top: 1px solid black;
+}
+
+section.data {
+    position: absolute;
+    height: 60%;
+    width: 95%;
+    top: 45%;
+    border-radius: 40px;
+    background-color: rgba(196, 196, 196, .7);
+}
+
+section.data .title {
+    width: 95%;
+    margin: 25px auto 0 auto;
+    border-bottom: 1px solid black;
+    height: 160px;
+}
+
+section.data .title h2 {
+    font-size: 100px;
+    filter: drop-shadow(0 8px 8px #363340);
+    text-align: center;
+}
+
+.information {
+    margin-top: 25px;
+    width: 95%;
+    margin: 25px auto 0 auto;
+}
+
+table {
+    font-size: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.addUser input {
+    display: block;
+    height: 70px;
+    margin-bottom: 20px;
+    width: 25%;
+}
+
+.addUser button {
+    margin-left: calc(25% - 130px);
+    height: 45px;
+    width: 130px;
+}
